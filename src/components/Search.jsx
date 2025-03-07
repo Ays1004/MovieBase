@@ -55,7 +55,7 @@ const Search = () => {
         {loading ? (
           <p>Loading...</p>
         ) : (
-          <div className="movie-grid grid grid-cols-5 content-between">
+          <div className="movie-grid grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 content-between">
             {searchResult && searchResult.length > 0 ? (
               searchResult.map((movie) => (
                 <Card

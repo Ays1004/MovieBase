@@ -60,7 +60,7 @@ const TopListShows = () => {
         <p className="text-center">Loading...</p>
       ) : (
         <>
-          <div className="movie-grid grid grid-cols-5 content-between">
+          <div className="movie-grid grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 content-between">
             {trending && trending.length > 0 ? (
               trending.map((show) => (
                 <Card
